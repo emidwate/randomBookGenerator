@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./universe.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://kit.fontawesome.com/7a9690bba4.js" crossorigin="anonymous"></script>
+    <title>randomBookGenerator</title>
+</head>
+<body class="font-montserrat bg-[--background-color] box-border">
+    <header class="flex flex-col gap-6 items-center p-6 dark:bg-[--header-color] bg-white text-white lg:flex-row lg:text-xl">
+        <img src="./universe.jpg" alt="universe icon profile" class="text-center w-16 h-16 border-2 border-transparent hover:border-collapse rounded-full hover:border-dashed hover:border-2 hover:border-[--border]">
+        <ul class="flex gap-4 font-medium lg:mr-auto">
+            <li><a href="../index.html" class="hover:underline decoration-2 underline-offset-8 hover:decoration-[--border] active:text-[--border]">Find a Book</li>
+            <li><a href="chart.html" class="hover:underline decoration-2 underline-offset-8 decoration-[--border]">Chart</a></li>
+            <li><a href="bookshelf.html" class="hover:underline decoration-2 underline-offset-8 decoration-[--border]">My Bookshelf</a></li>
+        </ul>
+        <div type="text" class="w-52 lg:w-72 h-10 bg-[--search-background-color] rounded-xl p-[5px] font-medium border-transparent border-2 hover:border-dashed hover:border-2 hover:border-[--border]" >
+            <label class="flex gap-4 items-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search by author" class="search-input text-white text-base bg-transparent w-[100%] focus:outline-none">
+            </label>
+            <div class="available-books absolute text-sm h-14 max-w-full overflow-auto mt-4 lg:h-20"></div>
+        </div>
+    </header>
+    <main class="flex flex-col items-center">
+        <h1 class="text-white mt-6 text-3xl">Your saved books</h1>
+        <div class="bookshelf text-white"></div>
+    </main>
+    <div class="flex gap-4 fixed bottom-12 left-[50%] -translate-x-1/2">
+        <a href="https://github.com/emidwate" target="_blank" class="text-white"><div href="https://github.com/emidwate" class="dark-mode-btn border-2 border-transparent rounded-full w-20 h-20 bg-[--header-color] hover:border-dashed hover:border-2 hover:border-[--border] animate-none hover:cursor-pointer relative w-"><i class="fa-2xl text-white absolute top-[50%] right-[30%] fa-brands fa-github"></i></div></a>
+    </div>
+    <script type="module" src="./script/bookshelf.js"></script>
+</body>
+</html>

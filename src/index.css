@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --header-color: #151517;
+    --background-color: #0E0E0E;
+    --search-background-color: #1C1C1F;
+    --border: #1F958F;
+    --roll-btn-bg-color: #37373d;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "randombookgenerator",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "tailwindcss": "^3.4.12",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "chartjs": "^0.3.24"
+  }
+}
