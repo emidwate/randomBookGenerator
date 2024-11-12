@@ -1,8 +1,6 @@
 "use strict"
 
-
 const DATA = JSON.parse(localStorage.getItem("arrayOfBooks"))
-// let DATA = [...DATA]
 let rollButton = document.querySelector(".roll-btn")
 const bookContainer = document.querySelector(".book-list")
 const sortElement = document.querySelector(".select-item")

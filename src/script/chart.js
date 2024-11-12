@@ -17,7 +17,6 @@ searchInput.addEventListener("input", () => {
         for (let book of DATA) {
             if (book.author.includes(userSearchInput)) {
                 const div = createHTMLTag("div", ["innerText", "className","onclick", "img", "url"], [`Author: ${book.author} Title: ${book.title} Epoch: ${book.epoch}`, `add-to-bookshelf cursor-pointer mb-4 hover:border-dotted`, addToLocalStorage, book.simple_thumb, book.url])
-                console.log(div)
                 foundedBooksArr.push(div)
             }
         }
